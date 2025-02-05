@@ -1,0 +1,136 @@
+:root {
+    --cor-primaria: #4B69FD;
+    --cor-secundaria: #FFF9EB;
+    --cor-terciaria: #C4C4C4;
+    --cor-botao: #fe652b;
+    --cor-botao-hover: #e55720;
+    --cor-texto: #444444;
+    --cor-branca: #FFFFFF;
+}
+
+/* Reset de estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    font-family: "Merriweather", serif;
+    font-style: italic;
+}
+
+.input-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.input-name {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button-add {
+    background-color: var(--cor-botao);
+    color: var(--cor-branca);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-add:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.name-list, .result-list {
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 18px;
+    color: var(--cor-texto);
+    text-align: left;
+}
+
+.result-list {
+    font-weight: bold;
+    color: rgb(105, 1, 105);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-botao);
+    color: var(--cor-branca);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-draw:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.button-draw img {
+    width: 20px;
+}
