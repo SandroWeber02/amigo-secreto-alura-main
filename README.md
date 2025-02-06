@@ -1,4 +1,4 @@
-# Projeto - Amigo Secreto
+# Amigo Secreto
 
 ## Funcionalidades
 - Adicionar nomes de amigos
